@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Lato:wght@400;700&display=swap');
+
+/* 
+Color Palette:
+--primary-color: #8D6E63; (Earthy Brown)
+--secondary-color: #D7CCC8; (Light Taupe)
+--accent-color: #C0A080; (Muted Gold)
+--dark-color: #3E2723; (Dark Brown)
+--light-color: #F5F5F5; (Off-white)
+*/
+
+:root {
+    --primary-color: #8D6E63;
+    --secondary-color: #D7CCC8;
+    --accent-color: #C0A080;
+    --dark-color: #3E2723;
+    --light-color: #F5F5F5;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Eczar', serif;
+    font-weight: 600;
+}
+
+/* Header */
+.bg-dark {
+    background-color: var(--dark-color) !important;
+}
+
+header {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link.text-secondary {
+    color: var(--accent-color) !important;
+    font-weight: bold;
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+/* Store Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.card-text.fs-5 {
+    color: var(--dark-color);
+}
+
+/* Buttons */
+.btn-warning {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--dark-color);
+}
+
+.btn-warning:hover {
+    background-color: #b38f70; /* Darker gold */
+    border-color: #b38f70;
+}
+
+/* Footer */
+footer.bg-dark {
+    background-color: var(--dark-color) !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

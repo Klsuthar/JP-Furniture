@@ -1,0 +1,18 @@
+JP Furniture/
+|
+|-- css/
+|   |-- style.css
+|
+|-- images/
+|   (empty)
+|
+|-- js/
+|   |-- script.js
+|   |-- translations.js
+|
+|-- about.html
+|-- contact.html
+|-- gallery.html
+|-- index.html
+|-- store.html
+|-- structure.txt

@@ -13,7 +13,7 @@
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <span class="fs-4" data-lang-key="logo_text">JP Furniture</span>
+                    <img src="images/logo/logo.png" alt="JP Rajasthani Furniture Logo" style="height: 40px; margin-right: 10px;"><span class="fs-4" data-lang-key="logo_text">JP Rajasthani Furniture</span>
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -33,42 +33,47 @@
     </header>
 
     <main class="container mt-5">
-        <h2 class="pb-2 border-bottom" data-lang-key="gallery_page_title">Our Bed Collection</h2>
-        <p data-lang-key="gallery_page_subtitle">A showcase of our finest handcrafted beds.</p>
-
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x300/A0522D/FFFFFF?text=Bed+Design+1" class="card-img-top" alt="Bed Design 1">
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Bed+Design+2" class="card-img-top" alt="Bed Design 2">
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x300/D2691E/FFFFFF?text=Bed+Design+3" class="card-img-top" alt="Bed Design 3">
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x300/CD853F/FFFFFF?text=Bed+Design+4" class="card-img-top" alt="Bed Design 4">
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x300/DEB887/FFFFFF?text=Bed+Design+5" class="card-img-top" alt="Bed Design 5">
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x300/A0522D/FFFFFF?text=Bed+Design+6" class="card-img-top" alt="Bed Design 6">
+        <h2 class="pb-2 border-bottom" data-lang-key="gallery_page_title">Our Gallery</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center mb-4">
+                    <button class="btn btn-outline-primary active" onclick="filterGallery('all')">All</button>
+                    <button class="btn btn-outline-primary" onclick="filterGallery('Bed')">Bed</button>
+                    <button class="btn btn-outline-primary" onclick="filterGallery('Cupboard')">Cupboard</button>
+                    <button class="btn btn-outline-primary" onclick="filterGallery('Dining_Table')">Dining Table</button>
+                    <button class="btn btn-outline-primary" onclick="filterGallery('Furniture')">Furniture</button>
+                    <button class="btn btn-outline-primary" onclick="filterGallery('Kitchen')">Kitchen</button>
+                    <button class="btn btn-outline-primary" onclick="filterGallery('Pataisan')">Pataisan</button>
+                    <button class="btn btn-outline-primary" onclick="filterGallery('Sofa')">Sofa</button>
+                    <button class="btn btn-outline-primary" onclick="filterGallery('TV_Unit')">TV Unit</button>
+                    <button class="btn btn-outline-primary" onclick="filterGallery('Wooden_Ceiling')">Wooden Ceiling</button>
                 </div>
             </div>
         </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="gallery-grid">
+            <!-- Gallery items will be injected here by JavaScript -->
+        </div>
     </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel">Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="img-fluid w-100" id="modalImage" alt="Full screen image">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-secondary" id="prevBtn">Previous</button>
+                    <button class="btn btn-outline-secondary" id="nextBtn">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="bg-dark text-white text-center p-3 mt-5">
         <p>&copy; 2025 <span data-lang-key="footer_text">JP Rajasthani Furniture. All Rights Reserved.</span></p>

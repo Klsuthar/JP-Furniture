@@ -1,7 +1,7 @@
 const translations = {
     en: {
         title: "JP Rajasthani Furniture - Home",
-        logo_text: "JP Furniture",
+        logo_text: "JP Rajasthani Furniture",
         nav_home: "Home",
         nav_store: "Store",
         nav_gallery: "Gallery",
@@ -53,7 +53,7 @@ const translations = {
     },
     hi: {
         title: "जेपी राजस्थानी फर्नीचर - होम",
-        logo_text: "जेपी फर्नीचर",
+        logo_text: "जेपी राजस्थानी फर्नीचर",
         nav_home: "होम",
         nav_store: "स्टोर",
         nav_gallery: "गैलरी",
